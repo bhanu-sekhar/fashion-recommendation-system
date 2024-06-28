@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+Predicted images:
+
+<ul>
+    {% for image in recommendations %}
+    <li><img src="{{ image }}" alt="Recommendation"></li>
+    <!--<li><img src="{{ url_for('static', filename=image) }}" alt="Recommendation"></li>-->
+    {% endfor %}
+</ul>
+</body>
+</html>
